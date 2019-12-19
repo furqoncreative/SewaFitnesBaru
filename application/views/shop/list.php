@@ -217,8 +217,8 @@
 
 	    });
 	</script>
-<script>
-    $('#sort_type').change(function () {
-        $('#filters_form').submit();
-    });
-</script>
+	<script>
+		$('#sort_type').change(function () {
+			$('#filters_form').submit();
+		});
+	</script>
