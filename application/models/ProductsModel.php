@@ -14,6 +14,12 @@ class ProductsModel extends MY_Model {
 		parent::__construct();
 	}
 
+	public function getAllProducts()
+    {
+        $q="select * from products";
+        return $this->db->query($q)->result();
+    }
+
 	public function getProductsForShop($category,$inputs,$limit,$offset)
     {
 

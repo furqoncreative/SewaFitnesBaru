@@ -17,6 +17,13 @@ class UsersModel extends MY_Model {
 
 	}
 
+	public function getAllUsers()
+    {
+        $q="select * from users";
+        return $this->db->query($q)->result();
+    }
+
+
 	public function attemptLoginAdmin($email,$password)
     {
         $this->db->select('*');
